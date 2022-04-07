@@ -1,5 +1,4 @@
 import type { UserConfigFn, UserConfig } from "vite";
-import vue from "@vitejs/plugin-vue";
 import react from "@vitejs/plugin-react";
 import legacy from "@vitejs/plugin-legacy";
 import tsconfigPaths from "vite-tsconfig-paths";
@@ -9,10 +8,9 @@ const defineConfig: UserConfigFn = ({ command, mode }) => {
   const config: UserConfig = {
     server: {
       port: 80,
-      https: true,
+      https: false,
     },
     plugins: [
-      vue(),
       react(),
       tsconfigPaths(),
       legacy(),
