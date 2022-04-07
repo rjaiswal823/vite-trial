@@ -7,7 +7,7 @@
     "dev": "vite --host",
     "prepare": "husky install",
     "preview": "vite preview",
-    "start:dev": "npm install && npx vite dev"
+    "start:dev": "npm install && npx vite dev --host"
   },
   "commitlint": {
     "extends": [

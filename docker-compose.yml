@@ -5,7 +5,7 @@ services:
     container_name: vite-container
     image: vite-container
     ports:
-      - 8080:8080
+      - 80:80
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - ./:/home/node/workspace
